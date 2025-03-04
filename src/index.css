@@ -1,0 +1,25 @@
+/* Global reset and ensure full width and height */
+* {
+  box-sizing: border-box; /* Include padding and borders in width/height */
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%; /* Full viewport height */
+  width: 100%;  /* Full viewport width */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Main content to take up full width */
+.main-content {
+  width: 100%; /* Take up the full width */
+  max-width: 100%; /* No limit on width */
+  height: 100%; /* Full height of the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}

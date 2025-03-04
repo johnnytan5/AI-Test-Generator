@@ -1,0 +1,45 @@
+.review-card {
+    background: #f5f5f5; /* Light grey background */
+    border-radius: 6px; /* Subtle rounded corners */
+    padding: 16px;
+    margin: 12px 0;
+    color: #333; /* Dark grey text */
+    font-family: Arial, sans-serif; /* Clean, modern font */
+    text-align: left; /* Left-aligned text */
+    border: 1px solid #ddd; /* Light border */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.review-card:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Question Title */
+.review-card h3 {
+    font-size: 1.2rem;
+    color: #222; /* Darker text for emphasis */
+    margin-bottom: 8px;
+}
+
+/* Text Styling */
+.review-card p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+/* Highlight Answer & Score */
+.review-card strong {
+    color: #0077b6; /* Deep blue for highlights */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .review-card {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}

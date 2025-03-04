@@ -1,0 +1,122 @@
+/* Full-width Navbar */
+
+.navbar * {
+    all: unset; /* Reset inherited styles */
+    display: revert; /* Keep the original navbar layout */
+    font-family: inherit; /* Ensure text looks consistent */
+}
+
+.navbar {
+    width: 100%;
+    background: #007bff; /* Blue background */
+    display: flex;
+    justify-content: space-between; /* Space out links and button */
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Navbar links container */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Navbar items (links) */
+.navbar-item {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-item:hover {
+    color: #e0e0e0;
+}
+
+/* Fix Logout Button */
+.logout-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px ;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: auto; /* Fix button width */
+    min-width: 100px; /* Prevent stretching */
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background: #cc0000;
+}
+
+/* Fix Logout Button Alignment */
+.navbar-links,
+.logout-btn {
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logout-btn {
+        margin-top: 10px;
+        width: auto;
+    }
+
+    /* Ensure Navbar is Fully Fixed & Independent */
+.navbar {
+    width: 100%;
+    background: #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Make sure it stays above everything */
+}
+
+/* Make sure Navbar is not affected by other styles */
+
+
+/* Fix Button */
+.logout-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 100px;
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background: #cc0000;
+}
+
+}

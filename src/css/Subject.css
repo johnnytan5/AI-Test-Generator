@@ -1,0 +1,82 @@
+/* Container for the skill cards */
+.subject-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row if necessary */
+    justify-content: space-evenly; /* Distribute cards evenly with space */
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Add some padding around the container */
+}
+
+/* Style for individual subject cards */
+.subject-card {
+    width: 250px; /* Set a fixed width for each card */
+    height: 350px; /* Set a fixed height for the card */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content inside the card */
+}
+
+/* Icon container positioned at the top-left corner */
+.icon-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2; /* Ensure the icon stays on top of the image */
+}
+
+/* The circle icon styles */
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff; /* White border */
+    background-color: gray; /* Default color */
+}
+
+/* Change icon color when the card is selected */
+.selected-icon {
+    background-color: green; /* Green when selected */
+}
+
+/* Image container styles */
+.image-container {
+    width: 100%;
+    height: 70%; /* Set the image to occupy 70% of the card's height */
+    position: relative;
+}
+
+/* Fix image size, ensuring it fits well inside the card */
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the area without distorting */
+}
+
+/* Name text styles */
+.name {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px; /* Adjusted font size for a compact look */
+    color: #333;
+    background-color: #fff; /* Ensure text has a background so it's readable over the image */
+    margin-top: auto; /* Push the name text to the bottom of the card */
+}
+
+/* Hover effect to lift the card and add shadow */
+.subject-card:hover {
+    transform: translateY(-5px); /* Lift the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Style when the card is selected */
+.selected {
+    border: 2px solid #4CAF50; /* Border color when selected */
+}
